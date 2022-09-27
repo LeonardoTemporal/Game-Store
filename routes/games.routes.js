@@ -23,6 +23,6 @@ gamesRouter.patch("/", gameExist, updateGame);
 
 gamesRouter.delete("/", gameExist, deleteGame);
 
-gamesRouter.post("/reviews:gameId", createReview);
+gamesRouter.post("/reviews/:gameId", createReview);
 
 module.exports = { gamesRouter };
